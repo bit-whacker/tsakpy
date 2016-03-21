@@ -5,7 +5,7 @@ Semantic Analysis tool
 ## heading2
 ### heading3
 #### heading4
-** bold ** <br>
+**bold** <br>
 `code style` <br>
 * list1
 * list2
