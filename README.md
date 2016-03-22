@@ -8,14 +8,14 @@ Prerequisites <br/>
 
 
 # Adding Dependencies <br>
-Tweepy Installation <br>
-  1. To insatll it from github, You need to clone the tweepy project to directory whose path doesn't contain blank spacesb<br> 
+1. Tweepy Installation <br>
+   To insatll it from github, You need to clone the tweepy project to directory whose path doesn't contain blank spacesb<br> 
        `git clone git://github.com/joshthecoder/tweepy.git` <br>
      Now you can run following cammands on git. <br>
       `cd tweepy` <br>
       `python setup.py install` <br>
-NLTK Installation <br>
-  1. To install NLTK Open Python Shell and run following command. <br>
+2. NLTK Installation <br>
+   To install NLTK Open Python Shell and run following command. <br>
      `import nltk` <br>
       `nltk.download()` <br>
 
