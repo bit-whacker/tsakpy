@@ -8,10 +8,10 @@ Prerequisites <br/>
 
 
 # Adding Dependencies <br>
- ## Tweepy Installation <br>
+  Tweepy Installation <br>
   1. To insatll it from github, You need to clone the tweepy project from <br> 
        `git clone git://github.com/joshthecoder/tweepy.git` <br>
-  2. Now you can run following cammands on git. <br>
+     Now you can run following cammands on git. <br>
       `cd tweepy` <br>
       `python setup.py install` <br>
 
