@@ -32,12 +32,10 @@ Prerequisites <br/>
 
 # Running the Application <br/>
 ### Running at the command line
-<p>run the following command from the root directory</p>
+<p>run the following command</p>
 `python Main.py`
 
-# heading4 <br/>
-**bold** <br/>
-`code style` <br/>
-* list1
-* list2
+### Available Commands <br/>
+`dumpTweets keyword limit` <br/>
+`dumpStreamingTweets keyword limit` 
 
