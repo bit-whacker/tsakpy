@@ -9,7 +9,7 @@ Prerequisites <br/>
 
 # Adding Dependencies <br>
 1. Tweepy Installation <br>
-   To insatll it from github, You need to clone the tweepy project to directory whose path doesn't contain blank spacesb<br> 
+   To insatll it from github, You need to clone the tweepy project to directory whose path doesn't contain blank spaces<br> 
        `git clone git://github.com/joshthecoder/tweepy.git` <br>
      Now you can run following cammands on git. <br>
       `cd tweepy` <br>
