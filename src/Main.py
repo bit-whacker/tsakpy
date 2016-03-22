@@ -1,5 +1,5 @@
 import os
-import setup
+import ConfigParser
 import CommandDumpTweets
 import CommandDumpStreamingTweets
 def executeCommand(command, keyword, limit,consumer_key,consumer_secret,access_key,access_secret):
@@ -17,12 +17,14 @@ def executeCommand(command, keyword, limit,consumer_key,consumer_secret,access_k
 	
 	
 def main():	
-	consumer_key = setup.consumer_key
-	consumer_secret = setup.consumer_secret
-	access_key = setup.access_key
-	access_secret = setup.access_secret
+	config = ConfigParser.RawConfigParser()
+	config.read('ConfigFile.properties')
+	consumer_key = config.get('Credentials','consumer_key')
+	consumer_secret = config.get('Credentials','consumer_secret')
+	access_key = config.get('Credentials','access_key')
+	access_secret = config.get('Credentials','access_secret')
 	while True:
-		line = raw_input("Enter Command > ")
+		line = raw_input("Enter Command :")
 		args = []
 		args = line.split(' ')
 		if  args[0] == 'exit':
