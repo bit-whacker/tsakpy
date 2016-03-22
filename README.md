@@ -1,7 +1,8 @@
 # tsakpy
-Semantic Analysis tool
+Sentiment Analysis tool
 
-# heading1
+# Installation
+
 ## heading2
 ### heading3
 #### heading4
