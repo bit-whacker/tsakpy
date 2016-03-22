@@ -30,7 +30,11 @@ Prerequisites <br/>
 `accessSecret=[enter your accessSecret key here]`<br><br>
 
 
-# heading3 <br/>
+# Running the Application <br/>
+### Running at the command line
+<p>run the following command from the root directory</p>
+`pyhton Main.py`
+
 # heading4 <br/>
 **bold** <br/>
 `code style` <br/>
