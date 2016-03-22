@@ -33,7 +33,7 @@ Prerequisites <br/>
 # Running the Application <br/>
 ### Running at the command line
 <p>run the following command from the root directory</p>
-`pyhton Main.py`
+`python Main.py`
 
 # heading4 <br/>
 **bold** <br/>
