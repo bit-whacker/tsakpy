@@ -32,7 +32,7 @@ Prerequisites <br/>
 
 # Running the Application <br/>
 ### Running at the command line
-<p>run the following command</p>
+<p>Open cmd and run the following command</p>
 `python Main.py`
 
 ### Available Commands <br/>
