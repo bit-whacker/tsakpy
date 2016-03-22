@@ -23,7 +23,7 @@ Prerequisites <br/>
 ####Setup
 
 * create twitter app [prerequisites](https://github.com/project-spinoza/twitter-swiss-army-knife/wiki/Prerequisites)<br>
-* edit `setup.py` file and enter your keys e.g. <br><br>
+* edit `ConfigFile.properties` file and enter your keys e.g. <br><br>
 `accessToken=[enter your access token here]`<br>
 `consumerSecret=[enter your consumer secret key here]`<br>
 `consumerKey=[enter your consumer key here]`<br>
