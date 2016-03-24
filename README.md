@@ -21,6 +21,8 @@ Prerequisites <br/>
    and then open python shell IDLE and run the following command to download necessary Corpora. <br>
       `import nltk` <br>
       `nltk.download()` <br>
+   For Mac or Unix you can go [here](http://www.nltk.org/install.html) to install nltk. <br>
+   and for dowwnloading necessary Corpora you can go [here](http://www.nltk.org/data.html) <br>
 
 
 ####Setup
