@@ -22,8 +22,8 @@ Prerequisites <br/>
       `import nltk` <br>
       `nltk.download()` <br>
    For Mac or Unix <br>
-   To install NLTK you can go [here](http://www.nltk.org/install.html). <br>
-   and for downloading necessary Corpora you can go [here](http://www.nltk.org/data.html) <br>
+   To install NLTK you can consult [Installing NLTK](http://www.nltk.org/install.html). <br>
+   and for downloading necessary Corpora you can consult [Installing NLTK Data](http://www.nltk.org/data.html) <br>
 
 
 ####Setup
