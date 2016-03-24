@@ -15,13 +15,14 @@ Prerequisites <br/>
       `cd tweepy` <br>
       `python setup.py install` <br>
 2. NLTK Installation <br>
-   For Windows
+   For Windows <br>
    To install NLTK Open cmd and run following command. <br>
       `pip install nltk` <br>
    and then open python shell IDLE and run the following command to download necessary Corpora. <br>
       `import nltk` <br>
       `nltk.download()` <br>
-   For Mac or Unix you can go [here](http://www.nltk.org/install.html) to install nltk. <br>
+   For Mac or Unix <br>
+   To install NLTK you can go [here](http://www.nltk.org/install.html). <br>
    and for dowwnloading necessary Corpora you can go [here](http://www.nltk.org/data.html) <br>
 
 
