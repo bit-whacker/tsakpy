@@ -15,8 +15,11 @@ Prerequisites <br/>
       `cd tweepy` <br>
       `python setup.py install` <br>
 2. NLTK Installation <br>
-   To install NLTK Open Python Shell and run following command. <br>
-     `import nltk` <br>
+   For Windows
+   To install NLTK Open cmd and run following command. <br>
+      `pip install nltk`
+   and then open python shell IDLE and run the following command to download necessary Corpora.
+      `import nltk` <br>
       `nltk.download()` <br>
 
 
