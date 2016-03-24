@@ -17,8 +17,8 @@ Prerequisites <br/>
 2. NLTK Installation <br>
    For Windows
    To install NLTK Open cmd and run following command. <br>
-      `pip install nltk`
-   and then open python shell IDLE and run the following command to download necessary Corpora.
+      `pip install nltk` <br>
+   and then open python shell IDLE and run the following command to download necessary Corpora. <br>
       `import nltk` <br>
       `nltk.download()` <br>
 
