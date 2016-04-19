@@ -15,15 +15,21 @@ Prerequisites <br/>
       `cd tweepy` <br>
       `python setup.py install` <br>
 2. NLTK Installation <br>
-   To install NLTK Open Python Shell and run following command. <br>
-     `import nltk` <br>
+   For Windows <br>
+   To install NLTK Open cmd and run following command. <br>
+      `pip install nltk` <br>
+   and then open python shell IDLE and run the following command to download necessary Corpora. <br>
+      `import nltk` <br>
       `nltk.download()` <br>
+   For Mac or Unix <br>
+   To install NLTK you can consult [Installing NLTK](http://www.nltk.org/install.html). <br>
+   and for downloading necessary Corpora you can consult [Installing NLTK Data](http://www.nltk.org/data.html) <br>
 
 
 ####Setup
 
 * create twitter app [prerequisites](https://github.com/project-spinoza/twitter-swiss-army-knife/wiki/Prerequisites)<br>
-* edit `setup.py` file and enter your keys e.g. <br><br>
+* edit `ConfigFile.properties` file and enter your keys e.g. <br><br>
 `accessToken=[enter your access token here]`<br>
 `consumerSecret=[enter your consumer secret key here]`<br>
 `consumerKey=[enter your consumer key here]`<br>
