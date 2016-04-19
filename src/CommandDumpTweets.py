@@ -24,7 +24,6 @@ def get_all_tweets(keyword, limit, consumer_key, consumer_secret, access_key, ac
 	#filepath = os.path.join('C:/Python27/PythonPrograms/get_tweets/',keyword+".txt")
 	targetFile = open(keyword+".txt", 'a')			#File Opened in Append Mode
 	tweets_Collection = []
-	allTweets = []
 	try:
 		tweets_Collection = api.search(q = keyword, count=limit, lang= 'en')
 		while len(tweets_Collection) < limit:
