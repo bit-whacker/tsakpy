@@ -4,6 +4,8 @@ import sys
 import csv
 import json
 import nltk
+import os
+import os.path
 from nltk.sentiment import SentimentAnalyzer
 from nltk.sentiment.util import *
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
@@ -22,19 +24,19 @@ class StdOutListener(StreamListener):
             self.rateLimit = 0
 			
 	def on_status(self, status):
-			target = open('%s_tweets.txt' % self.keyword, 'a')
+			targetFile = open(self.keyword+".txt", 'a')
 			sentimentIntensityAnalyzerObject = SentimentIntensityAnalyzer()
 			tweet = status.text.encode('utf-8')
 			if status.lang == 'en':
 				StdOutListener.num_tweets += 1
 				if StdOutListener.num_tweets > self.rateLimit:				
-					target.close()
+					targetFile.close()
 					StdOutListener.num_tweets = 0
 					return False
 			tweetPolarityScore = sentimentIntensityAnalyzerObject.polarity_scores(tweet)
 			status._json['Sentiment'] = tweetPolarityScore
-			target.write(str(status._json))
-			target.write('\n')
+			targetFile.write(str(status._json))
+			targetFile.write('\n')
 			return True	
 	
 	def on_error(self, status):
