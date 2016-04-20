@@ -1,5 +1,5 @@
 # tsakpy
-Sentiment Analysis Tool
+Text Processing Tool
 
 # Installation
 Prerequisites <br/>
