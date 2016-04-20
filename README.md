@@ -8,19 +8,18 @@ Prerequisites <br/>
 
 
 # Adding Dependencies <br>
-1. Tweepy Installation <br>
-   To insatll it from github, You need to clone the tweepy project to directory whose path doesn't contain blank spaces<br> 
-       `git clone git://github.com/joshthecoder/tweepy.git` <br>
-     Now you can run following cammands on git. <br>
-      `cd tweepy` <br>
-      `python setup.py install` <br>
+1. pip Installation
+   You can get `get-pip.py` [here] (https://bootstrap.pypa.io/get-pip.py).<br>
+   Open `C:\Python27` directory and paste `get-pip.py` file here. <br>
+   To install pip Open cmd and run following Command. <br>
+     `python get-pip.py` <br>
+
 2. NLTK Installation <br>
    For Windows <br>
    To install NLTK Open cmd and run following command. <br>
       `pip install nltk` <br>
    and then open python shell IDLE and run the following command to download necessary Corpora. <br>
-      `import nltk` <br>
-      `nltk.download()` <br>
+      `python -m nltk.downloader all` <br>
    For Mac or Unix <br>
    To install NLTK you can consult [Installing NLTK](http://www.nltk.org/install.html). <br>
    and for downloading necessary Corpora you can consult [Installing NLTK Data](http://www.nltk.org/data.html) <br>
@@ -34,7 +33,7 @@ Prerequisites <br/>
 `consumerSecret=[enter your consumer secret key here]`<br>
 `consumerKey=[enter your consumer key here]`<br>
 `accessSecret=[enter your accessSecret key here]`<br><br>
-
+* Run 'Installation.bat'. It will download some necessary dependencies
 
 # Running the Application <br/>
 ### Running at the command line
