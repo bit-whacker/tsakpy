@@ -23,7 +23,7 @@ def executeCommand(command, keyword, limit,consumer_key,consumer_secret,access_k
 	
 def main():	
 	config = ConfigParser.RawConfigParser()
-	config.readfp(open('C:\Python27\PythonPrograms\get_tweets\ConfigFile.properties'))
+	config.readfp(open('ConfigFile.properties'))
 	consumer_key = config.get('Credentials','consumer_key')
 	consumer_secret = config.get('Credentials','consumer_secret')
 	access_key = config.get('Credentials','access_key')
