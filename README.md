@@ -41,6 +41,9 @@ Prerequisites <br/>
 `python Main.py`
 
 ### Available Commands <br/>
-`dumpTweets keyword limit` <br/>
-`dumpStreamingTweets keyword limit` 
+   For running Twitter Sentiment Analysis Enter `sentiment` and then one of the following commands. <br> 
+  `dumpTweets keyword limit` <br/>
+  `dumpStreamingTweets keyword limit` <br>
+  
+  For Entity Extraction from a Given Sentence enter `entity` and then provide the Sentence.
 
