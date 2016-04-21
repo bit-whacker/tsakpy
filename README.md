@@ -33,7 +33,7 @@ Prerequisites <br/>
 `consumerSecret=[enter your consumer secret key here]`<br>
 `consumerKey=[enter your consumer key here]`<br>
 `accessSecret=[enter your accessSecret key here]`<br><br>
-* Run 'Installation.bat'. It will download some necessary dependencies
+* Run `Installation.bat`. It will download some necessary dependencies
 
 # Running the Application <br/>
 ### Running at the command line
