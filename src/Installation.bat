@@ -20,7 +20,7 @@ echo Installing pattern
 pip install pattern
 echo ============================
 echo Installing SpaCy
-pip install spacy
+python -m spacy.en.download all
 echo ============================
 
 
