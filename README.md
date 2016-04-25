@@ -33,7 +33,7 @@ Prerequisites <br/>
 `consumerSecret=[enter your consumer secret key here]`<br>
 `consumerKey=[enter your consumer key here]`<br>
 `accessSecret=[enter your accessSecret key here]`<br><br>
-* Run 'Installation.bat'. It will download some necessary dependencies
+* Run `Installation.bat`. It will download some necessary dependencies
 
 # Running the Application <br/>
 ### Running at the command line
@@ -43,7 +43,7 @@ Prerequisites <br/>
 ### Available Commands <br/>
    For running Twitter Sentiment Analysis Enter `sentiment` and then one of the following commands. <br> 
   `dumpTweets keyword limit` <br/>
-  `dumpStreamingTweets keyword limit` <br>
+  `dumpStreaming keyword limit` <br>
   
   For Entity Extraction from a Given Sentence enter `entity` and then provide the Sentence.
 
