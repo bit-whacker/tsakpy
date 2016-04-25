@@ -3,12 +3,7 @@ import csv
 import time
 import sys
 import json
-import nltk
-import os
-import os.path
-from nltk.sentiment import SentimentAnalyzer
-from nltk.sentiment.util import *
-from nltk.sentiment.vader import SentimentIntensityAnalyzer
+
 
 
 def get_all_tweets(keyword, limit, consumer_key, consumer_secret, access_key, access_secret):
@@ -17,13 +12,8 @@ def get_all_tweets(keyword, limit, consumer_key, consumer_secret, access_key, ac
 	auth.set_access_token(access_key, access_secret)
 	api = tweepy.API(auth)
 	
-	
-	#initialize a list to hold all the tweepy Tweets	
-	sentimentIntensityAnalyzerObject = SentimentIntensityAnalyzer()
-	
-	#filepath = os.path.join('C:/Python27/PythonPrograms/get_tweets/',keyword+".txt")
-	targetFile = open(keyword+".txt", 'a')			#File Opened in Append Mode
 	tweets_Collection = []
+	allTweets = []
 	try:
 		tweets_Collection = api.search(q = keyword, count=limit, lang= 'en')
 		while len(tweets_Collection) < limit:
@@ -42,14 +32,4 @@ def get_all_tweets(keyword, limit, consumer_key, consumer_secret, access_key, ac
 			print 'We are having trouble connecting to Twitter. Check Credentials'
 		else:
 			print e
-	for tweet in tweets_Collection: 
-		tweetText = tweet.text.encode('utf-8')
-		tweetPolarityScore = sentimentIntensityAnalyzerObject.polarity_scores(tweetText)
-		tweet._json['Sentiment'] = tweetPolarityScore	
-		targetFile.write(str(tweet._json))
-		targetFile.write('\n')
-	targetFile.close()	
-
-
-def downloadTweets(keyword,limit,consumer_key,consumer_secret,access_key,access_secret):
-	get_all_tweets(keyword, int(limit), consumer_key, consumer_secret, access_key, access_secret)
+	return tweets_Collection
