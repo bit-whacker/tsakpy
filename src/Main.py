@@ -49,7 +49,7 @@ def executeCommand(command, keyword, type, sentiment,limit,consumer_key,consumer
 	
 def main():	
 	config = ConfigParser.RawConfigParser()
-	config.readfp(open('C:\Python27\PythonPrograms\TSAK\ConfigFile.properties'))
+	config.readfp(open('ConfigFile.properties'))
 	consumer_key = config.get('Credentials','consumer_key')
 	consumer_secret = config.get('Credentials','consumer_secret')
 	access_key = config.get('Credentials','access_key')

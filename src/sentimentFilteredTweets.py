@@ -15,7 +15,7 @@ def getFilteredTweets(tweets_collection, sentiment,keyword):
 	sentimentIntensityAnalyzerObject = SentimentIntensityAnalyzer()
 	for tweet in tweets_collection:
 		print tweet.text
-		tweetPolarityScore = sentimentIntensityAnalyzerObject.polarity_scores(tweet.text)
+		tweetPolarityScore = sentimentIntensityAnalyzerObject.polarity_scores(tweet.text.encode('utf8'))
 		print tweetPolarityScore
 		if sentiment == "negative":
 			if tweetPolarityScore['neg'] > tweetPolarityScore['pos'] and tweetPolarityScore['neg'] > tweetPolarityScore['neu']:
