@@ -4,7 +4,7 @@ Text Processing Tool
 # Installation
 Prerequisites <br/>
  1. Install Python 2.7.11 with pip<br/>
- You  can download Python 2.7.11 from [here] (https://www.python.org/downloads/) <br>
+ You  can download and install Python 2.7.11 from [here] (https://www.python.org/downloads/) <br>
 
 2. NLTK Installation <br>
    **For Windows**<br>
@@ -17,8 +17,8 @@ Prerequisites <br/>
    and for downloading necessary Corpora you can consult [Installing NLTK Data](http://www.nltk.org/data.html) <br>
 3. Install `spacy`<br>
   run the following command to install `spacy`<br>
-  'pip install spacy`<br>
-**Note** in windows environment if you face an issue like missing `vcvarsall.bat` during spacy installation then first download `vc_for_python` from `http://aka.ms/vcpython27` install it and set environment variable for `AppData\Local\Programs\Common\Microsoft\Visual C++ for Python\9.0` and `AppData\Local\Programs\Common\Microsoft\Visual C++ for Python\9.0\VC\bin` and then retry to install spacy as above.
+  `pip install spacy`<br>
+**Note**:  in windows environment if you face an issue like missing `vcvarsall.bat` during spacy installation then first download `vc_for_python` from `http://aka.ms/vcpython27` install it and set environment variable for `AppData\Local\Programs\Common\Microsoft\Visual C++ for Python\9.0` and `AppData\Local\Programs\Common\Microsoft\Visual C++ for Python\9.0\VC\bin` and then retry to install spacy as above.
 
 
 ####Setup
@@ -37,9 +37,14 @@ Prerequisites <br/>
 `python Main.py`
 
 ### Available Commands <br/>
-   For running Twitter Sentiment Analysis Enter `sentiment` and then one of the following commands. <br> 
-  `dumpTweets keyword limit` <br/>
-  `dumpStreaming keyword limit` <br>
+  **For running Twitter Sentiment Analysis run one of the following commands.** <br> 
+  `dumpTweets -keyword <any keyword> -sentiment <positive|negative|neutral> -limit <integer>` <br/>
+  `dumpStreaming -keyword <any keyword> -sentiment <positive|negative|neutral> -limit <integer>` <br>
+  e.g. `dumpTweets -keyword iphone -sentiment positive -limit 5` <br/><br>
   
-  For Entity Extraction from a Given Sentence enter `entity` and then provide the Sentence.
+  **For Entity Extraction from a Given Sentence run one of the following command.**<br>
+  `dumpTweets -keyword <any keyword> -entity -limit <integer>` <br/>
+  `dumpStreaming -keyword <any keyword> -entity -limit <integer>` <br>
+  e.g. `dumpStreaming -keyword ipad -entity -limit 4`
+  
 
