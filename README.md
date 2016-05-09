@@ -3,10 +3,10 @@ Text Processing Tool
 
 # Installation
 Prerequisites <br/>
- 1. Install Python 2.7.11 with pip<br/>
+ ### Install Python 2.7.11 with pip<br/>
  You  can download and install Python 2.7.11 from [here] (https://www.python.org/downloads/) <br>
 
-2. NLTK Installation <br>
+### NLTK Installation <br>
    * **For Windows**<br>
    Open commandline and run following command. <br>
       `pip install nltk` <br>
@@ -17,7 +17,7 @@ Prerequisites <br/>
    To install NLTK you can consult [Installing NLTK](http://www.nltk.org/install.html). <br>
    and for downloading necessary Corpora you can consult [Installing NLTK Data](http://www.nltk.org/data.html) <br>
 
-3. Install `spacy`<br>
+### Install `spacy`<br>
   run the following command to install `spacy`<br>
   `pip install spacy`<br>
 
