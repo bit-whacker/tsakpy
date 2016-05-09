@@ -15,9 +15,11 @@ Prerequisites <br/>
    For Mac or Unix <br>
    To install NLTK you can consult [Installing NLTK](http://www.nltk.org/install.html). <br>
    and for downloading necessary Corpora you can consult [Installing NLTK Data](http://www.nltk.org/data.html) <br>
+
 3. Install `spacy`<br>
   run the following command to install `spacy`<br>
   `pip install spacy`<br>
+
 **Note**:  in windows environment if you face an issue like missing `vcvarsall.bat` during spacy installation then first download `vc_for_python` from `http://aka.ms/vcpython27` install it and set environment variable for `AppData\Local\Programs\Common\Microsoft\Visual C++ for Python\9.0` and `AppData\Local\Programs\Common\Microsoft\Visual C++ for Python\9.0\VC\bin` and then retry to install spacy as above.
 
 
