@@ -3,26 +3,22 @@ Text Processing Tool
 
 # Installation
 Prerequisites <br/>
- 1. Python 2.7.11 <br/>
+ 1. Install Python 2.7.11 with pip<br/>
  You  can download Python 2.7.11 from [here] (https://www.python.org/downloads/) <br>
 
-
-# Adding Dependencies <br>
-1. pip Installation
-   You can get `get-pip.py` [here] (https://bootstrap.pypa.io/get-pip.py).<br>
-   Open `C:\Python27` directory and paste `get-pip.py` file here. <br>
-   To install pip Open cmd and run following Command. <br>
-     `python get-pip.py` <br>
-
 2. NLTK Installation <br>
-   For Windows <br>
-   To install NLTK Open cmd and run following command. <br>
+   **For Windows**<br>
+   Open commandline and run following command. <br>
       `pip install nltk` <br>
-   and then open python shell IDLE and run the following command to download necessary Corpora. <br>
+   run the following command to download necessary Corpora. <br>
       `python -m nltk.downloader all` <br>
    For Mac or Unix <br>
    To install NLTK you can consult [Installing NLTK](http://www.nltk.org/install.html). <br>
    and for downloading necessary Corpora you can consult [Installing NLTK Data](http://www.nltk.org/data.html) <br>
+3. Install `spacy`<br>
+  run the following command to install `spacy`<br>
+  'pip install spacy`<br>
+**Note** in windows environment if you face an issue like missing `vcvarsall.bat` during spacy installation then first download `vc_for_python` from `http://aka.ms/vcpython27` install it and set environment variable for `AppData\Local\Programs\Common\Microsoft\Visual C++ for Python\9.0` and `AppData\Local\Programs\Common\Microsoft\Visual C++ for Python\9.0\VC\bin` and then retry to install spacy as above.
 
 
 ####Setup
