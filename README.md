@@ -3,7 +3,7 @@ Text Processing Tool
 
 # Installation
 Prerequisites <br/>
- ### Install Python 2.7.11 with pip<br/>
+### Install Python 2.7.11 with pip<br/>
  You  can download and install Python 2.7.11 from [here] (https://www.python.org/downloads/) <br>
 
 ### NLTK Installation <br>
