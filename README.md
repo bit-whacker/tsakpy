@@ -7,12 +7,13 @@ Prerequisites <br/>
  You  can download and install Python 2.7.11 from [here] (https://www.python.org/downloads/) <br>
 
 2. NLTK Installation <br>
-   **For Windows**<br>
+   * **For Windows**<br>
    Open commandline and run following command. <br>
       `pip install nltk` <br>
    run the following command to download necessary Corpora. <br>
       `python -m nltk.downloader all` <br>
-   For Mac or Unix <br>
+
+  * **For Mac or Unix**<br>
    To install NLTK you can consult [Installing NLTK](http://www.nltk.org/install.html). <br>
    and for downloading necessary Corpora you can consult [Installing NLTK Data](http://www.nltk.org/data.html) <br>
 
@@ -40,13 +41,13 @@ Prerequisites <br/>
 
 ### Available Commands <br/>
   **For running Twitter Sentiment Analysis run one of the following commands.** <br> 
-  `dumpTweets -keyword <any keyword> -sentiment <positive|negative|neutral> -limit <integer>` <br/>
-  `dumpStreaming -keyword <any keyword> -sentiment <positive|negative|neutral> -limit <integer>` <br>
+  * `dumpTweets -keyword <any keyword> -sentiment <positive|negative|neutral> -limit <integer>` <br/>
+  * `dumpStreaming -keyword <any keyword> -sentiment <positive|negative|neutral> -limit <integer>` <br>
   e.g. `dumpTweets -keyword iphone -sentiment positive -limit 5` <br/><br>
   
   **For Entity Extraction from a Given Sentence run one of the following command.**<br>
-  `dumpTweets -keyword <any keyword> -entity -limit <integer>` <br/>
-  `dumpStreaming -keyword <any keyword> -entity -limit <integer>` <br>
+  * `dumpTweets -keyword <any keyword> -entity -limit <integer>` <br/>
+  * `dumpStreaming -keyword <any keyword> -entity -limit <integer>` <br>
   e.g. `dumpStreaming -keyword ipad -entity -limit 4`
   
 
