@@ -27,9 +27,11 @@ def get_all_tweets(keyword, limit, consumer_key, consumer_secret, access_key, ac
 		if str(e) == str([{u'message': u'Rate limit exceeded', u'code': 88}]):
 			time.sleep(60*5) #Sleep for 5 minutes
 		elif str(e) == str([{u'message': u'Bad Authentication data.', u'code': 215}]):
-			print "Enter the Correct Twitter Application Credentials"
+			return e
+		elif str(e) == str([{u'message': u'Invalid or expired token.', u'code': 89}]):
+			return e
 		elif str(e) == "Not authorized.":
-			print 'We are having trouble connecting to Twitter. Check Credentials'
+			return e
 		else:
-			print e
+			return e
 	return tweets_Collection
