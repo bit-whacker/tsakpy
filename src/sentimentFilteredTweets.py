@@ -12,12 +12,10 @@ def getFilteredTweets(tweets_collection, sentiment,outputFile):
 	filteredTweets = []	
 	targetFile = open(outputFile, 'a')
 	for tweet in tweets_collection:
-		polarity_scores = getPolarityScores(tweet.text.encode('utf-8'))
-		print polarity_scores
+		text = tweet.text.encode('utf-8')
+		polarity_scores = getPolarityScores(text)
 		ret_sentiment = getSentiment(polarity_scores)
-		print ret_sentiment
 		if(ret_sentiment == sentiment):
-			print "entered condition"
 			tweet._json['Sentiment'] = ret_sentiment
 			targetFile.write(str(tweet._json))
 			targetFile.write("\n")

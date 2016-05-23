@@ -16,12 +16,12 @@ def getEntity(parser,tweets,outputFile):
 	targetFile = open(outputFile, 'a')
 	for tweet in tweets:
 		entity_Resultlist = []
-		text = tweet.text
+		text = tweet.text.encode('utf-8')
 		replaced_input_sentence = re.sub("[^' 'a-zA-Z]", "",text)
 		replaced_input = unicode(re.sub(r"http\S+", "", replaced_input_sentence))
 		try:
 			xEntities = getEntities(parser,replaced_input,xEntities)
-			tweet._json['extracted_entities'] = xEntities#json.dumps(entity_Resultlist)
+			tweet._json['extracted_entities'] = xEntities
 			targetFile.write(str(tweet._json))
 			targetFile.write('\n')
 			filteredTweets.append(tweet._json)
